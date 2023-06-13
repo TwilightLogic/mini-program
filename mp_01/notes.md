@@ -4,14 +4,16 @@
 
 ### JSON配置文件
 
-`app.json` 是当前小程序的全局配置，包括了小程序的所有**页面路径、窗口外观、界面表现、底部tab**等。
+#### app.json 
+
+是当前小程序的全局配置，包括了小程序的所有**页面路径、窗口外观、界面表现、底部tab**等。
 
 - pages: 用来记录当前小程序所有页面的路径
 - window: 用来定义小程序所有页面的背景色、文字颜色等
 - style: ：全局定义小程序组件所使用的样式版本
 - sitemapLocation：用来指明sitemap.json的位置
 
-`sitemap.json` 
+#### sitemap.json
 
 微信现已开放小程序内搜索，效果类似于PC网页的SEO。sitemapjson文件用来配置小程序页面是**否允许微信索引**
 
@@ -31,14 +33,14 @@
 WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来构建小程序页面的结构，其作
 用类似于网页开发中的HTML。
 
-##### 与HTML的区别
+#### 与HTML的区别
 1. 标签名称不同
 - HTML (div, span, img, a)
 - WXML (view, text, image, navigator)
 
 2. 属性节点不同
-- <a href="#">超链接</a>
-- <navigator url="/pages/home/home"></navigator>
+- `<a href="#">超链接</a>`
+- `<navigator url="/pages/home/home"></navigator>`
 
 3. 提供了类似子Vue中的模板语法
 - 数据绑定
@@ -47,7 +49,7 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 
 ### WXSS样式
 
-##### 与CSS的区别
+#### 与CSS的区别
 
 1. 新增了rpx尺寸单位
 - CSS中需要手动进行像素单位换算，例如rem
@@ -68,3 +70,5 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 - 是页面的入口文件，通过调用Page()函数来创建并运行页面
 3. 普通的.js文件
 - 是普通的功能模块文件，用来封装公共的函数或属性供页面使用
+
+## 宿主环境
