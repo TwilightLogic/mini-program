@@ -1,6 +1,8 @@
-## Leaning mini-program
+# Leaning mini-program
 
-### 代码结构
+## 代码结构
+
+### JSON配置文件
 
 `app.json` 是当前小程序的全局配置，包括了小程序的所有**页面路径、窗口外观、界面表现、底部tab**等。
 
@@ -15,6 +17,30 @@
 
 如果`index.json`和`app.json`的配置冲突，则会以`index.json`的配置为准
 
-### 新增小程序页面
+#### 新增小程序页面
 
-只需要在 `app.json-＞pages` 中新增页面的存放路径，小程序开发者工具即可帮我们自动创建对应的页面文件，
+只需要在 `app.json-＞pages` 中新增页面的存放路径，小程序开发者工具即可帮我们自动创建对应的页面文件
+
+#### 修改项目首页
+
+只需要调整 `app.json-＞pages` 数组中页面路径的前后顺序，即可修改项目的首页。小程序会把排在第一位的页
+面，当作项目首页进行渲染
+
+### WXML模版
+
+WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来构建小程序页面的结构，其作
+用类似于网页开发中的HTML。
+
+##### 与HTML的区别
+1. 标签名称不同
+- HTML (div, span, img, a)
+- WXML (view, text, image, navigator)
+
+2. 属性节点不同
+- <a href="#">超链接</a>
+- <navigator url="/pages/home/home"></navigator>
+
+3. 提供了类似子Vue中的模板语法
+- 数据绑定
+- 列表渲染
+- 条件渲染
