@@ -163,3 +163,18 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 ```html
   <rich-text nodes="h1 style='color:red;'">标题</rich-text>
 ```
+
+### 其他常用组件
+
+1. `button`
+- 按钮组件
+- 功能比HTML中的button按钮丰富
+- 通过`open-type`属性可以调用微信提供的各种功能（客服、转发、获取用户授权、获取用户信息等）
+
+2. `image`
+- 图片组件
+- image组件默认宽度约300pX、高度约240px
+
+3. `navigator`
+- 页面导航组件
+- 类似于HTML中的a链接

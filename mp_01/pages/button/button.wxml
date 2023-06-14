@@ -1,0 +1,19 @@
+<!-- ------- 按钮组件的基本使用 ------- -->
+
+<view>----通过 type 属性指定按钮颜色类型----</view>
+
+<button>Normal</button>
+<button type="primary">Primary</button>
+<button type="warn">Warn</button>
+
+<view>----通过 size 属性指定按钮颜色尺寸----</view>
+
+<button size="mini">mini</button>
+<button size="mini" type="primary">pri-mini</button>
+<button size="mini" type="warn">warn-mini</button>
+
+<view>----通过 plain 属性设置按钮镂空----</view>
+
+<button size="mini" plain>mini</button>
+<button size="mini" type="primary" plain>pri-mini</button>
+<button size="mini" type="warn" plain>warn-mini</button>

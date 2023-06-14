@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/button/button",
     "pages/text/text",
     "pages/swiper/swiper",
     "pages/scrollList/scrollList",
