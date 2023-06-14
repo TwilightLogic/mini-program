@@ -1,0 +1,6 @@
+<!--pages/text/text.wxml-->
+
+<view>
+  Long press the phone number to copy:
+  <text selectable>15767119993</text>
+</view>

@@ -143,3 +143,17 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 > `autoplay`: 是否自动切换
 > `interval`: 自动切换时间间隔
 > `circular`: 是否采用衔接滑动
+
+### 常用的基础内容组件
+
+1. `text`
+- 文本组件
+- 类似于HTML里的`<span>`，是一个行内元素
+
+2. `rich-text`
+- 富文本组件
+- 支持把HTML字符串渲染为WXML结构
+
+#### `text`组件的基本使用
+
+通过 `text` 组件的 `selectable` 属性，实现长按选中文本内容的效果（只有`text`支持长按选中）
