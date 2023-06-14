@@ -1,3 +1,4 @@
 <!--pages/image/image.wxml-->
 
+<image/>
 <image src="/images/1.png" mode="aspectFill"/>
