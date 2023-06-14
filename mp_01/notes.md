@@ -156,4 +156,10 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 
 #### `text`组件的基本使用
 
-通过 `text` 组件的 `selectable` 属性，实现长按选中文本内容的效果（只有`text`支持长按选中）
+1. 通过 `text` 组件的 `selectable` 属性，实现长按选中文本内容的效果（只有`text`支持长按选中）
+
+2. 通过`rich-text`组件的nodes属性节点，把HTML字符串渲染为对应的UI结构：
+
+```html
+  <rich-text nodes="h1 style='color:red;'">标题</rich-text>
+```
