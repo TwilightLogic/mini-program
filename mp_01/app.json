@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/image/image",
     "pages/button/button",
     "pages/text/text",
     "pages/swiper/swiper",
