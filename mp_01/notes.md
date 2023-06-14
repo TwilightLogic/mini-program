@@ -134,3 +134,12 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 
 3. `swiper`, `swiper-iter`
 - 轮播图容器组件和轮播图item组件
+
+#### swiper 组件的常用属性
+
+> `indicator-dots`: 是否显示面板指示点
+> `indicator-color`: 指示点颜色
+> `indicator-active-color`: 当前选中的指示点颜色
+> `autoplay`: 是否自动切换
+> `interval`: 自动切换时间间隔
+> `circular`: 是否采用衔接滑动
