@@ -1,0 +1,24 @@
+/* pages/swiper/swiper.wxss */
+
+.swiper-container {
+  height: 150px;
+}
+
+.item {
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  line-height: 150px;
+}
+
+swiper-item:nth-child(1) .item {
+  background-color: #6CABDD;
+}
+
+swiper-item:nth-child(2) .item {
+  background-color: #1C2C5B;
+}
+
+swiper-item:nth-child(3) .item {
+  background-color: #FFC659;
+}
