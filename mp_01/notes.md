@@ -125,7 +125,7 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 
 1. `view`
 - 普通视图区域
-- 类似于HTML中的div，是一个块级元素
+- 类似于HTML中的`<div>`，是一个块级元素
 - 常用来实现页面的布局效果
 
 2. `scroll-view`

@@ -1,1 +1,25 @@
 /* pages/list/list.wxss */
+.container1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container1 view {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+}
+
+.container1 view:nth-child(1) {
+  background-color: #6CABDD;
+}
+
+.container1 view:nth-child(2) {
+  background-color: #FFC659;
+}
+
+.container1 view:nth-child(3) {
+  background-color: #1C2C5B;
+}
