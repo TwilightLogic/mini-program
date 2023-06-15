@@ -228,3 +228,7 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 
 - 特点：类似于 jQuery 中的`$.ajax(options)`函数，需要通过 success、fail、complete 接收调用的结果
 - 举例：`wx.request()` 发起网络数据请求，通过 success 回调函数接收数据
+
+## 3. 协同工作和发布
+
+...
