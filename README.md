@@ -237,11 +237,11 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 
 ### 4.1 数据绑定
 
-### 4.1.1 Mustache 语法的格式
+#### 4.1.1 Mustache 语法的格式
 
 把 data 中的数据鄉定到页面中渲染，使用 Mustache 语法(双大括号）将变量包起来即可。
 
-### 4.1.2 Mustache 语法的应用场景
+#### 4.1.2 Mustache 语法的应用场景
 
 Mustache 语法的主要应用场景如下：
 
@@ -250,3 +250,32 @@ Mustache 语法的主要应用场景如下：
 - 运算（三元运算、算术运算等）
 
 ### 4.2 事件绑定
+
+**类型**
+tap
+input
+change
+
+**绑定方式**
+bindTap 或 bind:tap
+bindInput 或 bind:input
+bindChange 或 bind:change
+
+**事件描述**
+手指触摸后马上离开，类似于 HTML 中的 click 事件
+文本框的输入事件
+状态改变时触发
+
+#### 4.2.1 `target` 和 `currentTarget` 的区别
+
+`target` 是触发该事件的源头组件，而 `currentTarget` 则是当前事件所绑定的组件。
+
+#### 4.2.2 `bindtap`的语法格式
+
+在小程序中，不存在 HTML 中的 `onclick` 鼠标点击事件，而是通过 tap 事件来响应用户的触摸行为。
+
+1. 通过`bindtap`，可以为组件绑定 `tap` 触摸事件，语法如下：
+
+```html
+<button type="primary" bindtap="btnTapHandler">btn</button>
+```
