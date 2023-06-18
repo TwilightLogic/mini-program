@@ -234,3 +234,7 @@ WXML(weixinMarkupLanguage)是小程序框架设计的一套标签语言，用来
 ...
 
 ## 4. 数据绑定
+
+Mustache 语法的格式
+
+把 data 中的数据鄉定到页面中渲染，使用 Mustache 语法(双大括号）将变量包起来即可。
