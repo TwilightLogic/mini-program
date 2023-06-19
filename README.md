@@ -372,3 +372,24 @@ inputHandler(e) {
 <view wx:elif="{{type === 2}}">女</view>
 <view wx:else>保密</view>
 ```
+
+#### 4.3.2 结合 `<block>` 使用 `wx:if`
+
+如果要一次性控制多个组件的展示与隐藏，可以使用一个<block></block>标签将多个组件包装起来，并在<block>标签上使用 `wx:if` 控制属性，示例如下：
+
+```html
+<block wx:if="{{true}}">
+  <view>1</view>
+  <view>2</view>
+</block>
+```
+
+> **注意：** > `<block>`并不是一个组件，它只是一个包裹性质的容器，不会在页面中做任何渲染。
+
+#### 4.3.3 `hidden`
+
+在小程序中，直接使用 `hidden="{{condition}}"` 也能控制元素的显示与隐藏：
+
+```html
+<view hidden="{{condition}}">条件为 true 隐藏，条件为 false 显示</view>
+```
