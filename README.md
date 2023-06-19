@@ -354,3 +354,21 @@ inputHandler(e) {
 2. 渲染结构
 3. 美化样式
 4. 绑定 input 事件处理函数
+
+### 4.3 条件渲染
+
+#### 4.3.1 `wx:if`
+
+在小程序中，使用 `wx:if="{{condition}}"` 来判断是否需要渲染该代码块：
+
+```html
+<view wx:if="{{condition}}">True</view>
+```
+
+也可以用 `wx:elif` 和 `wx:else` 来添加 else 判断：
+
+```html
+<view wx:if="{{type === 1}}">男</view>
+<view wx:elif="{{type === 2}}">女</view>
+<view wx:else>保密</view>
+```
