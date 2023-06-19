@@ -294,3 +294,35 @@ Page({
   },
 });
 ```
+
+#### 4.2.4 事件传参
+
+小程序中的事件传参比较特殊，不能在绑定事件的同时为事件处理函数传递参数。例如，下面的代码将不能正常工作：
+
+```html
+<button type="primary" bindtap="btnHandler(123)">事件传参</button>
+```
+
+可以为组件提供 `data-*` 自定义属性传参，其中 `*` 代表的是参数的名字，示例代码如下：
+
+> 如果是 `data-info="2"` 则代表字符串 `"2"`
+
+```html
+<button type="primary" data-info="{{2}}">事件传参</button>
+```
+
+最终
+
+- **info**会被解析为**参数的名字**
+- 数值 **2** 会被解析为**参数的值**
+
+在事件处理函数中，通过 `event.target.dataset.参数名` 即可获取到具体参数的值，示例代码如下：
+
+```js
+btnHandler(event) {
+    // dataset是一个对象，包含了所有通过 `data-*` 传递过来的参数项
+    console.log(event.target.dataset)
+    // 通过 dataset 可以访问到具体的参数值
+    console.log(event.target.dataset.info)
+}
+```
