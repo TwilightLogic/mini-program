@@ -279,3 +279,18 @@ bindChange 或 bind:change
 ```html
 <button type="primary" bindtap="btnTapHandler">btn</button>
 ```
+
+#### 4.2.3 在事件处理函数中为 data 中的数据赋值
+
+```js
+Page({
+  data: {
+    count: 0,
+  },
+  btnTapHandler(e) {
+    this.setData({
+      count: this.data.count + 1,
+    });
+  },
+});
+```
