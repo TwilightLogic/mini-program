@@ -326,3 +326,22 @@ btnHandler(event) {
     console.log(event.target.dataset.info)
 }
 ```
+
+#### 4.2.5 `bindinput`的语法格式
+
+在小程序中，通过 input 事件来响应文本框的输入事件，语法格式如下：
+
+1. 通过 `bindinput` 可以为文本框绑定输入事件：
+
+```html
+<input bindinput="inputHandler" />
+```
+
+2.在页面的 `.js` 文件中定义事件处理函数：
+
+```js
+inputHandler(e) {
+    // e.target.value 是变化过后，文本框最新的值（能拿到文本框当前最新的值）
+    console.log(e.target.value)
+}
+```
