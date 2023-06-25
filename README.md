@@ -407,3 +407,11 @@ inputHandler(e) {
 
 - 频繁切换时，建议使用 `hidden`
 - 控制条件复杂时，建议使用 `wx:if` 搭配 `wx:elif` 和 `wx:else` 进行展示与隐藏的切换
+
+### 4.4 列表渲染
+
+通过 `wx:for` 可以根据指定的数组，循环渲染重复的组件结构，语法示例如下：
+
+```html
+<view wx:for="{{array}}"> 索引是：{{index}}，当前项是：{{item}}</view>
+```
