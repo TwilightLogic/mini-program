@@ -410,8 +410,34 @@ inputHandler(e) {
 
 ### 4.4 列表渲染
 
+#### 4.4.1 `wx:for` 的使用
+
 通过 `wx:for` 可以根据指定的数组，循环渲染重复的组件结构，语法示例如下：
 
 ```html
 <view wx:for="{{array}}"> 索引是：{{index}}，当前项是：{{item}}</view>
+```
+
+#### 4.4.2 `wx:key` 的使用
+
+小程序在实现列表渲染时，建议为渲染出来的列表项指定唯一的 `key` 值，从而提高渲染的效率。
+
+这里是 `index.js` 的 data 数据：
+
+```js
+data: {
+  userList: [
+    { id: 1, name: "Lucas" },
+    { id: 2, name: "Logic" },
+    { id: 3, name: "Luna" },
+  ];
+}
+```
+
+这里是 WXML：
+
+> 注意：key 值里面不用加 mustache 语法
+
+```html
+<view wx:for="{{userList}}" wx:key="id">{{item.name}}</view>
 ```
