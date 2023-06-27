@@ -1,0 +1,13 @@
+<!-- <view class="container">
+  <view class="countNum">{{count}}</view>
+  <button type="primary" bindtap="countChange">btn1</button>
+  <button type="primary" data-info="{{2}}" bindtap="btnHandler">+2</button>
+  <input value="{{msg}}" bindinput="inputHandler" />
+</view> -->
+<view wx:for="{{arr}}">
+  {{index}}: {{item}}
+</view>
+
+<view wx:for="{{userList}}" wx:key="id" class="username">
+  {{item.name}}
+</view>

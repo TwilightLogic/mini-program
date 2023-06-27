@@ -1,0 +1,22 @@
+/**index.wxss**/
+
+@import "../common/common.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.countNum {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container input {
+  border: 1px solid #eee;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+}

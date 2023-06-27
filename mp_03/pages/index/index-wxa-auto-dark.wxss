@@ -1,0 +1,14 @@
+/* 
+此文件为开发者工具生成，生成时间: 6/27/2023, 11:45:04 AM
+使用方法：
+在 index.wxss 文件末尾引入样式
+```
+@import "./index-wxa-auto-dark.wxss";
+```
+ */
+
+@media (prefers-color-scheme: dark) {
+    .container input {
+        border: rgb(0, 0, 0);
+    }
+}
