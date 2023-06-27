@@ -4,11 +4,12 @@
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "Logic",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
